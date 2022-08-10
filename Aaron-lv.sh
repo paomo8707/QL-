@@ -73,6 +73,16 @@ TIME l "拉取1-5.sh"
 curl -fsSL ${curlurl}/Aaron-lv/jd/1-5.sh > /ql/jd/1-5.sh
 TIME l "拉取6-10.sh"
 curl -fsSL ${curlurl}/Aaron-lv/jd/6-10.sh > /ql/jd/6-10.sh
+TIME l "拉取11-15.sh"
+curl -fsSL ${curlurl}/Aaron-lv/jd/11-15.sh > /ql/jd/11-15.sh
+TIME l "拉取16-20.sh"
+curl -fsSL ${curlurl}/Aaron-lv/jd/16-20.sh > /ql/jd/16-20.sh
+TIME l "拉取21-25.sh"
+curl -fsSL ${curlurl}/Aaron-lv/jd/21-25.sh > /ql/jd/21-25.sh
+TIME l "拉取26-30.sh"
+curl -fsSL ${curlurl}/Aaron-lv/jd/26-30.sh > /ql/jd/26-30.sh
+TIME l "拉取31-35.sh"
+curl -fsSL ${curlurl}/Aaron-lv/jd/31-35.sh > /ql/jd/31-35.sh
 TIME l "拉取jd_sms_login.py"
 curl -fsSL ${curlurl}/Aaron-lv/jd_sms_login.py > /ql/qlwj/jd_sms_login.py
 TIME l "拉取ckck3.sh"
@@ -98,7 +108,7 @@ if [ "$(grep -c extra /ql/config/crontab.list)" = 0 ]; then
     echo
     # 获取token
     token=$(cat /ql/config/auth.json | jq --raw-output .token)
-    curl -s -H 'Accept: application/json' -H "Authorization: Bearer $token" -H 'Content-Type: application/json;charset=UTF-8' -H 'Accept-Language: zh-CN,zh;q=0.9' --data-binary '{"name":"每4小时更新任务","command":"ql extra","schedule":"40 0-23/3 * * *"}' --compressed 'http://127.0.0.1:5700/api/crons?t=1624782068473'
+    curl -s -H 'Accept: application/json' -H "Authorization: Bearer $token" -H 'Content-Type: application/json;charset=UTF-8' -H 'Accept-Language: zh-CN,zh;q=0.9' --data-binary '{"name":"每4小时更新任务","command":"ql extra","schedule":"40 0-23/1 * * *"}' --compressed 'http://127.0.0.1:5700/api/crons?t=1624782068473'
 fi
 sleep 1
 echo
@@ -211,7 +221,7 @@ if [ "$(grep -c jd_cleancartAll.js /ql/config/crontab.list)" = 0 ]; then
 fi
 task wskey.py |tee azcg.log
 echo
-TIME y "拉取zero205和yyds两个脚本（用TG机器人每周提交助力码）"
+TIME y "拉取king（用TG机器人每周提交助力码）"
 echo
 echo
 rm -fr /ql/azcg.log
