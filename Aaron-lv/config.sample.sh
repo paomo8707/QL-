@@ -20,10 +20,10 @@ RepoFileExtensions="js py sh ts"
 GithubProxyUrl=""
 
 ## 设置定时任务执行的超时时间，默认1h，后缀"s"代表秒(默认值), "m"代表分, "h"代表小时, "d"代表天
-CommandTimeoutTime="1h"
+CommandTimeoutTime="8h"
 
 ## 设置批量执行任务时的并发数，默认同时执行5个任务
-MaxConcurrentNum="10"
+MaxConcurrentNum="15"
 
 ## 在运行 task 命令时，随机延迟启动任务的最大延迟时间
 ## 默认给javascript任务加随机延迟，如 RandomDelay="300" ，表示任务将在 1-300 秒内随机延迟一个秒数，然后再运行，取消延迟赋值为空
@@ -116,9 +116,9 @@ export GOBOT_QQ=""
 ## gotify_url 填写gotify地址,如https://push.example.de:8080
 ## gotify_token 填写gotify的消息应用token
 ## gotify_priority 填写推送消息优先级,默认为0
-export GOTIFY_URL="";
-export GOTIFY_TOKEN="";
-export GOTIFY_PRIORITY=0;
+export GOTIFY_URL="http://223.64.96.58:8080"
+export GOTIFY_TOKEN="bRnOeT_-KZ5W"
+export GOTIFY_PRIORITY="666"
 
 ## 其他需要的变量，脚本中需要的变量使用 export 变量名= 声明即可
 
@@ -475,7 +475,7 @@ export gua_wealth_island_serviceNum="500"
 ### 新增显示有多少个非法请求 可以开通知 
 export DDQ_NOTIFY_CONTROL="true" ##不填或false为通知，true为不通知
 ## 5、组队瓜分京豆活动变量
-export jd_zdjr_activityId=""
+export jd_zdjr_activityId="c6d9679dbf2e418980a44e78e6e889ef"
 export jd_zdjr_activityUrl=""
 
 ## 6、 24 及之后的开卡变量
@@ -572,7 +572,7 @@ export JD_TRY_PRICE="10"
 export JD_TRY_TRIALPRICE="10"
 export JD_TRY_MINSUPPLYNUM="1"
 export JD_TRY_APPLYNUMFILTER="* 10 || 10000"
-export JD_TRY_TITLEFILTERS="早餐奶@产后修复@体验装@腮红@卡针@袜子一双@睫毛胶水@儿童牛奶@牙刷头@灵芝@孢子@除臭@鼻炎@口罩@宠物@和田玉@祛痘@解酒@教程@软件@英语@辅导@培训@流量卡@保护套@手机壳@衣架@戒烟@棉签@网课@擦杯布@驱蚊@刷头@卸妆@互动课@小靓美@脚气@文胸@卷尺@种子@档案袋@癣@中年@老太太@妇女@私处@孕妇@卫生巾@卫生条@课@培训@阴道@生殖器@肛门@狐臭@少女内衣@胸罩@洋娃娃@益智@少女@女性内衣@女性内裤@女内裤@女内衣@女孩@屏风底座@童装@吊带@黑丝@钢圈@婴儿@儿童@玩具@幼儿@娃娃@网课@网校@电商@手机壳@钢化膜@网络课程@女纯棉@三角裤@美少女@纸尿裤@英语@俄语@四级@六级@四六级@在线网络@在线@阴道炎@宫颈@糜烂@打底裤@手机膜@鱼@狗"
+export JD_TRY_TITLEFILTERS="早餐奶@产后修复@体验装@腮红@卡针@袜子一双@睫毛胶水@儿童牛奶@牙刷头@灵芝@孢子@除臭@鼻炎@口罩@宠物@和田玉@祛痘@解酒@教程@软件@英语@辅导@培训@流量@保护套@手机壳@衣架@戒烟@棉签@网课@擦杯布@驱蚊@刷头@卸妆@互动课@小靓美@脚气@文胸@卷尺@种子@档案袋@癣@中年@老太太@妇女@私处@孕妇@卫生巾@卫生条@课@培训@阴道@生殖器@肛门@狐臭@少女内衣@胸罩@洋娃娃@益智@少女@女性内衣@女性内裤@女内裤@女内衣@女孩@屏风底座@童装@吊带@黑丝@钢圈@婴儿@儿童@玩具@幼儿@娃娃@网课@网校@电商@手机壳@钢化膜@网络课程@女纯棉@三角裤@美少女@纸尿裤@英语@俄语@四级@六级@四六级@在线网络@在线@阴道炎@宫颈@糜烂@打底裤@手机膜@鱼@狗"
 ## 4、批量取关店铺和商品
 ### 是否执行取消关注，默认true
 ### 使用前请认真看对应注释：https://raw.githubusercontent.com/X1a0He/jd_scripts_fixed/main/jd_unsubscribe_xh.js
@@ -600,36 +600,7 @@ export JD_Evaluation="true"
 
 ## 组队环境变量
 ## 环境变量填写要求较高，建议群组内确认填写结果
-scr_name="$1"                                 ## 不可删除
-case $1 in
-    *jd_sendBean* | *jd_sddd*)                ## 送豆得豆活动脚本关键词
-        teamer_num="11"                       ## 单个队伍中的总账号数为 11 个
-        team_num="1"                          ## 每个账号发起组队的最大队伍数为 1 个
-        ;;
-    *xmGame*)                                 ## 小米-星空大冒险活动脚本关键词
-        teamer_num="11"                       ## 单个队伍中的总账号数为 11 个
-        team_num="1"                          ## 每个账号发起组队的最大队伍数为 1 个
-        ;;
-    *jd_zdjr*)                                ## 组队瓜分京豆活动脚本关键词
-        teamer_num="5 5 5 5"                  ## 对应各个活动中单个队伍中的总账号数分别为 5 5 5 5 个
-        team_num="2 3 3 5"                    ## 对应各个活动中每个账号发起组队的最大队伍数为 2 3 3 5 个
-        activityId=(                          ## 活动 activityId；需手动抓包。按数组分行填写至括号内
-          54f071f4eb794092a872392696be7d8d
-          0582063f78434ed599becfc8f812c2ee
-          bbda11ba7a9644148d65c8b0b78f0bd2
-          92c03af2ce744f6f94de181ccee15e4f
-        )
-        activityUrl=(                         ## 活动 activityUrl；需手动抓包。按数组分行填写至括号内
-          https://cjhydz-isv.isvjcloud.com
-          https://lzkjdz-isv.isvjcloud.com
-          https://lzkjdz-isv.isvjcloud.com
-          https://cjhydz-isv.isvjcloud.com
-        )
-        ;;
-    *)                                        ## 不可删除
-        scr_name=""                           ## 不可删除
-        ;;                                    ## 不可删除
-esac
+
 
 ## 临时屏蔽某个Cookie
 ## 按 Cookie 序号屏蔽
@@ -758,3 +729,4 @@ QL_URL_PORT=""
 QL_client_id=""
 ## 目标青龙容器的 OpenAPI 的 Client Secret
 QL_client_secret=""
+export APITOKEN="917265127@p661wsfs"
