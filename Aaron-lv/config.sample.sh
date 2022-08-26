@@ -112,13 +112,6 @@ export GOBOT_URL=""
 export GOBOT_TOKEN=""
 export GOBOT_QQ=""
 
-## 10. gotify
-## gotify_url 填写gotify地址,如https://push.example.de:8080
-## gotify_token 填写gotify的消息应用token
-## gotify_priority 填写推送消息优先级,默认为0
-export GOTIFY_URL="http://223.64.96.58:8080"
-export GOTIFY_TOKEN="bRnOeT_-KZ5W"
-export GOTIFY_PRIORITY="666"
 
 ## 其他需要的变量，脚本中需要的变量使用 export 变量名= 声明即可
 
@@ -239,13 +232,7 @@ NOTIFY_DISABLE_MainWP_UID=""
 ###           填以上模式的混合内容。例如：NOTIFY_WxPusher_TIME="6 8~10 12-14 16_18"；
 ###           空值或填其他内容表示不启用该功能。
 NOTIFY_WxPusher_TIME=""
-## 13.8 扩展通知
-### 通知内容出现在正文顶部或末尾。支持 HTML 语言代码，仅支持 pushplus 、WxPusher 这些 HTML 代码通知的渠道
-### 例如：ExNotify_Top_Content='<iframe allowtransparency="true" frameborder="0" width="100%" height="auto" scrolling="yes" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=0&v=0&d=5&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=100%&h=auto&align=center"></iframe>'
-###       ExNotify_Bot_Content='NoLan服务器：<a href="http://服务器地址:端口?key=HeaderKey">点击访问</a>'
-ExNotify_Top_Content=''
-ExNotify_Bot_Content='<iframe allowtransparency="true" frameborder="0" width="100%" height="auto" scrolling="yes" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=0&v=0&d=5&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=100%&h=auto&align=center"></iframe>'
-
+##
 ## 14 Shell 版公告 notify2 环境变量(WxPusher、企业微信应用、pushplus、hxtrip pushplus)
 ## 14.1 读取 WxPusher UID 的方式
 ### 赋值要求：填 1 表示读取青龙面板环境变量中未被禁用的 JD_COOKIE 备注中的 UID；
@@ -729,4 +716,3 @@ QL_URL_PORT=""
 QL_client_id=""
 ## 目标青龙容器的 OpenAPI 的 Client Secret
 QL_client_secret=""
-export APITOKEN="917265127@p661wsfs"
