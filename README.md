@@ -9,6 +9,12 @@
 ```sh
 docker exec -it qinglong bash -c "task /ql/jd/1-5.sh && python3 /ql/jd/1-5.py"
 docker exec -it qinglong bash -c "task /ql/jd/6-10.sh && python3 /ql/jd/6-10.py"
+docker exec -it qinglong bash -c "task /ql/jd/11-15.sh && python3 /ql/jd/11-15.py"
+docker exec -it qinglong bash -c "task /ql/jd/16-20.sh && python3 /ql/jd/16-20.py"
+docker exec -it qinglong bash -c "task /ql/jd/21-25.sh && python3 /ql/jd/21-25.py"
+docker exec -it qinglong bash -c "task /ql/jd/26-30.sh && python3 /ql/jd/26-30.py"
+docker exec -it qinglong bash -c "task /ql/jd/31-35.sh && python3 /ql/jd/31-35.py"
+
 ```
 #
 - 为防止系统没安装curl，使用不了一键命令，使用一键安装青龙面板命令之前先执行一次安装curl命令
