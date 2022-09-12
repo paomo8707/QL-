@@ -31,7 +31,7 @@ logger.addHandler(logging.StreamHandler())  # 添加控制台日志
 
 
 ip = "localhost"
-sub_str = os.getenv("RES_SUB", "KingRan")
+sub_str = os.getenv("RES_SUB", "KingRan&chaoyi996")
 sub_list = sub_str.split("&")
 res_only = os.getenv("RES_ONLY", True)
 headers = {
