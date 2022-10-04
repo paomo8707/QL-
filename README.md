@@ -44,8 +44,18 @@ bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/paom
 
 ## 第二步
 
-#### 🚩 如果上面的命令运行成功会有提示，按提示操作登录面板
-
+#### 🚩 docker版本fdd
+docker run -dit \
+  -v $PWD/fdd/config:/fdd/config \
+  -v $PWD/fdd/mysql:/fdd/mysql \
+  -e MYSQL_ROOT_PASSWORD=123456 \
+  -e MYSQL_DATABASE=emotion \
+  -e SERCET_KEY=abcd \
+  -p 8088:80 \
+  -p 3301:3306 \
+--name fdd \
+--restart always \
+eyesouls/fdd:v2.0
 
 - 
 #### 🚩 单独安装某项的一键脚本
