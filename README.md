@@ -45,6 +45,7 @@ bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/paom
 ## 第二步
 
 #### 🚩 docker版本fdd
+```
 docker run -dit \
   -v $PWD/fdd/config:/fdd/config \
   -v $PWD/fdd/mysql:/fdd/mysql \
@@ -56,7 +57,7 @@ docker run -dit \
 --name fdd \
 --restart always \
 eyesouls/fdd:v2.0
-
+```
 - 
 #### 🚩 单独安装某项的一键脚本
 
