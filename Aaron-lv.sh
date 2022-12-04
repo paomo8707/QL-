@@ -65,20 +65,6 @@ TIME l "拉取jdCookie.js"
 curl -fsSL ${curlurl}/Aaron-lv/jdCookie.js > /ql/qlwj/jdCookie.js
 TIME l "拉取jd_cleancartAll.js"
 curl -fsSL ${curlurl}/Aaron-lv/jd_cleancartAll.js > /ql/qlwj/jd_cleancartAll.js
-TIME l "拉取1-5.sh"
-curl -fsSL ${curlurl}/Aaron-lv/jd/1-5.sh > /ql/jd/1-5.sh
-TIME l "拉取6-10.sh"
-curl -fsSL ${curlurl}/Aaron-lv/jd/6-10.sh > /ql/jd/6-10.sh
-TIME l "拉取11-15.sh"
-curl -fsSL ${curlurl}/Aaron-lv/jd/11-15.sh > /ql/jd/11-15.sh
-TIME l "拉取16-20.sh"
-curl -fsSL ${curlurl}/Aaron-lv/jd/16-20.sh > /ql/jd/16-20.sh
-TIME l "拉取21-25.sh"
-curl -fsSL ${curlurl}/Aaron-lv/jd/21-25.sh > /ql/jd/21-25.sh
-TIME l "拉取26-30.sh"
-curl -fsSL ${curlurl}/Aaron-lv/jd/26-30.sh > /ql/jd/26-30.sh
-TIME l "拉取31-35.sh"
-curl -fsSL ${curlurl}/Aaron-lv/jd/31-35.sh > /ql/jd/31-35.sh
 TIME l "拉取jd_sms_login.py"
 curl -fsSL ${curlurl}/Aaron-lv/jd_sms_login.py > /ql/qlwj/jd_sms_login.py
 chmod -R +x /ql/qlwj
