@@ -8,6 +8,5 @@ ql repo https://github.com/smiek2121/scripts.git "jd_|gua_" "gua_cleancart.js|gu
 ql repo https://github.com/KingRan/KR.git "jd_|jx_|jdCookie" "activity|backUp" "^jd[^_]|USER|utils|function|sign|sendNotify|ql|JDJR"
 ql repo https://github.com/feverrun/my_scripts.git "jd_|jx_|jddj_|getCookie|getJDCookie" "backUp" "^(jd|JD|JS)[^_]|USER|sendNotify|utils"
 ql repo https://github.com/chaoyi996-Chris/JD_tencent_scf_Chris.git "jd_|jx_|jdCookie" "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign|ql" "main"
-ql repo https://github.com/paomo8707/jxcfd.git "jx_" "" "ql_"
 task disableDuplicateTasksImplement.py
 
