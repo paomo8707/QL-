@@ -81,8 +81,9 @@ docker run \
     -v  "$(pwd)"/sillyGirl:/etc/sillyGirl \
     mzzsfy/sillygirl:latest
 ```    
-
-
+- 傻妞
+```sh
+bash <(curl -sSL https://github.com/paomo8707/QL-/install.sh)
 
 ```
 
