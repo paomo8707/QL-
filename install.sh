@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+# 
+#
 n="sillyGirl"
 s="/root/sillyGirl/$n"
 a=arm64
