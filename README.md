@@ -83,7 +83,8 @@ docker run \
 ```    
 - 傻妞
 ```sh
-bash <(curl -sSL https://github.com/paomo8707/QL-/install.sh)
+
+bash -c "$(curl -sSL https://github.com/paomo8707/QL-/install.s)"
 
 ```
 
